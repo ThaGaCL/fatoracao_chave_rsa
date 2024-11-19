@@ -27,11 +27,10 @@ def encontrar_chave_privada(e, n):
         return None
 
 # Exemplo de uso
-e = 65534413437  # Exemplo de valor comum para e
-n = 32325432612
+e = int(input("Insira o expoente: "))  # Exemplo de valor comum para e
+n = int(input("Insira o modulo: "))
 
-# Exemplo pequeno de n para teste, deve ser substituído pelo valor real
-
+# Calcular a chave privada
 d = encontrar_chave_privada(e, n)
 if d:
     print("Foi encontrada a chave privada:", d)
